@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario de Registro</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQObH6_1LH3gvl5uQQPF7H5SHCOYE8P_Xpbcw&s');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      max-width: 90%;
+      width: 400px;
+    }
+
+    h2 {
+      color: #2e7d32;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      font-size: 16px;
+      color: white;
+      background-color: #4caf50;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #388e3c;
+    }
+
+    @media (max-width: 480px) {
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .container {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Formulario de Registro</h2>
+    <form onsubmit="redirigirAlMenu(event)">
+      <input type="text" placeholder="Nombre" required />
+      <input type="text" placeholder="Apellido" required />
+      <input type="email" placeholder="Crear correo" required />
+      <input type="password" placeholder="Crear contraseña" required />
+      <button type="submit" class="btn">Registrarse</button>
+    </form>
+  </div>
+
+  <script>
+    function redirigirAlMenu(event) {
+      event.preventDefault(); // Evita que el formulario se envíe de forma tradicional
+      window.location.href = "menu.html"; // Redirige a la página de menú
+    }
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impresión 3D de Comida</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fffaf0;
+      margin: 2vw;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+      margin: 1em 0;
+    }
+
+    h1 { color: darkred; font-size: 2em; }
+    h2 { color: darkgreen; font-size: 1.5em; }
+    h3 { color: navy; font-size: 1.2em; }
+
+    fieldset {
+      border: 2px solid #333;
+      margin: 5vw 0;
+      padding: 4vw;
+      border-radius: 10px;
+    }
+
+    ol {
+      padding-left: 1.5em;
+    }
+
+    .galeria {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    /* Estilo base para todas las imágenes */
+    .galeria img {
+      width: 80vw;
+      max-width: 250px;
+      height: auto;
+      object-fit: cover;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .mascara-triangulo {
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+
+    .mascara-circulo {
+      clip-path: circle(50% at 50% 50%);
+    }
+
+    .mascara-polig {
+      clip-path: polygon(10% 0%, 90% 0%, 100% 60%, 50% 100%, 0% 60%);
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      margin: 30px 0;
+      font-weight: bold;
+      font-size: 1.1em;
+      color: darkblue;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Media Queries para pantallas mayores */
+    @media (min-width: 600px) {
+      body {
+        margin: 40px;
+      }
+
+      h1 { font-size: 2.5em; }
+      h2 { font-size: 2em; }
+      h3 { font-size: 1.5em; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Impresión 3D de Comida</h1>
+
+  <fieldset>
+    <h2>¿Qué es la impresión 3D de comida?</h2>
+    <p>
+      La impresión 3D de comida crea alimentos capa por capa con ingredientes comestibles (chocolate, purés, masas). Similar a impresoras 3D tradicionales, pero ¡comestible! Revoluciona la cocina gourmet, la nutrición personalizada y más.
+    </p>
+  </fieldset>
+
+  <fieldset>
+    <h2>Usos actuales de la impresión 3D de comida</h2>
+    <ol>
+      <li>Restaurantes gourmet: diseños únicos.</li>
+      <li>Nutrición personalizada.</li>
+      <li>Educación culinaria.</li>
+      <li>Alimentos en el espacio.</li>
+      <li>Sostenibilidad: ingredientes alternativos.</li>
+    </ol>
+  </fieldset>
+
+  <fieldset>
+    <h2>Ventajas de esta tecnología</h2>
+    <ol>
+      <li>Formas precisas.</li>
+      <li>Cantidades nutrientes controladas.</li>
+      <li>Creatividad ilimitada.</li>
+      <li>Ahorro de tiempo.</li>
+      <li>Ingredientes sostenibles.</li>
+    </ol>
+  </fieldset>
+
+  <fieldset>
+    <h3>Galería de imágenes con máscaras</h3>
+    <div class="galeria">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgtQGAE-StqFY5f-3QyiWd1J1B6zxW8g2Pyg&s"
+           alt="Comida 3D triángulo" class="mascara-triangulo">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQObH6_1LH3gvl5uQQPF7H5SHCOYE8P_Xpbcw&s"
+           alt="Postre 3D círculo" class="mascara-circulo">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNaacN_VYvVU1UhpXXa8b6-KCCRvvRRNIJHw&s"
+           alt="Platillo 3D polígono" class="mascara-polig">
+    </div>
+  </fieldset>
+
+  <a href="menu.html">← Volver a la página principal</a>
+ <h4>CARDENAS SOTO ANGEL</h4>
+</body>
+</html>
